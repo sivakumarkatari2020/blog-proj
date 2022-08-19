@@ -1,0 +1,19 @@
+:root{
+    --primary : #4188FF;
+    --secondary : #f3f3f3;
+    --light : #ffffff;
+    --dark : #111111;
+    --fade : #999999;
+
+    --font-primary : #111111;
+    --font-secondary : #4188FF;
+    --font-light : #999999;
+
+    --font1 : 'Poppins';
+    --font2 : 'Lora';
+}
+.header{
+    transition: all .5s ease-in-out;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}

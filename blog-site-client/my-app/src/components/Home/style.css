@@ -1,0 +1,139 @@
+:root{
+    --primary : #4188FF;
+    --secondary : #f3f3f3;
+    --light : #ffffff;
+    --dark : #111111;
+    --fade : #999999;
+
+    --font-primary : #111111;
+    --font-secondary : #4188FF;
+    --font-light : #999999;
+
+    --font1 : 'Poppins';
+    --font2 : 'Lora';
+}
+
+.carousel{
+    height: 400px;
+}
+.carousel-small{
+    padding: 0;
+    height: 200px;
+    box-sizing: border-box;
+    overflow: visible;
+}
+.slide-small{
+    max-width: 300px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px -70px 50px -30px inset;
+}
+
+.post-container{    
+    display: grid;
+    grid-template-rows: repeat(7,200px);
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.post{
+    height: 500px;
+    box-sizing: content-box;
+}
+.post-1{
+    grid-row: 1/4;
+}
+.post-2{
+    grid-row: 2/5;
+}
+.post-3{
+    grid-row: 5/6;
+}
+.post-4{
+    grid-row: 6/7;
+    grid-column-start: 2;
+}
+@media (max-width:500px){
+    .post-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .post{
+        width: 90%;
+        height: 450px;
+    }
+    .post1{
+        grid-row: unset;
+    }
+}
+
+.section-3{
+    height: 200px;
+}
+@media (max-width:500px){
+    .section3-img{
+        display: none;
+    }
+}
+
+.footer{
+    height: 500px;
+}
+.input-email-sub{
+    width: 300px;
+    padding: 1rem;
+    border: 2px solid var(--fade);
+    background-color: var(--dark);
+    border-radius: 50px;
+    color: var(--light);
+}
+.button-full-sub{
+    width: 340px;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-color: var(--fade);
+    color: var(--secondary);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all .25s ease-in;
+}
+.button-full-sub:hover{
+    background-color: var(--primary);
+    color: var(--light);
+}
+@media (max-width:500px){
+    .footer{
+        height: 100vh;
+    }
+}
+
+/* Swiper button styling */
+.swiper-wrapper{
+    overflow-x: visible;
+}
+.swiper-button-next{
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    font-size: 1rem;
+}
+.swiper-button-next::after{
+    font-size: 1rem;
+    color: var(--light);
+}
+.swiper-button-prev{
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    font-size: 1rem;
+}
+.swiper-button-prev::after{
+    font-size: 1rem;
+    color: var(--light);
+}
